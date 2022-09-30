@@ -12,8 +12,8 @@ function AllMeetupsPage() {
         ).then(response => {
             return response.json();
         }).then(data => {
-            const meetups = [];
 
+            const meetups = [];
             for(const key in data) {
                 meetups.push({
                     id: key,
